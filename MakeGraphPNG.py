@@ -1,6 +1,9 @@
 #Create Graph as png file
+import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import json
+import codecs
 
 if __name__ == '__main__':
     f = open("init.json", 'r')
@@ -9,6 +12,12 @@ if __name__ == '__main__':
     fileName = json_data['file']
     playerA = json_data['playera']
     playerB = json_data['playerb']
+
+    with codecs.open(fileName, "r", "SJIS", "ignore") as file:
+        df = pd.read_table(file, delimiter=",")
+    df['FirstSecond'] = df['FirstSecond'].convert_objects(
+        convert_numeric=True).fillna(-1).astype(np.int)
+    df = df.reset_index()
 
     flow_array = np.loadtxt(fileName + "_output.csv", delimiter=",")
     plen = len(flow_array)

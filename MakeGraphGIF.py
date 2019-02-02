@@ -1,7 +1,10 @@
 #Create Animation Graph as gif file
+import pandas as pd
 import numpy as np
 import matplotlib.animation as animation
 import matplotlib.pyplot as plt
+import json
+import codecs
 
 if __name__ == '__main__':
     f = open("init.json", 'r')
@@ -14,8 +17,17 @@ if __name__ == '__main__':
     set2 = json_data['set2']
     set3 = json_data['set3']
 
+    with codecs.open(fileName, "r", "SJIS", "ignore") as file:
+        df = pd.read_table(file, delimiter=",")
+    df['FirstSecond'] = df['FirstSecond'].convert_objects(
+        convert_numeric=True).fillna(-1).astype(np.int)
+    df = df.reset_index()
+
     flow_array = np.loadtxt(fileName + "_output.csv", delimiter=",")
+    gameA_array = np.loadtxt(fileName + "_gamea.csv", delimiter=",")
+    gameB_array = np.loadtxt(fileName + "_gameb.csv", delimiter=",")
     plen = len(flow_array)
+
 
     temp1 = []
     temp2 = []

@@ -285,5 +285,7 @@ if __name__ == '__main__':
         point2nd_array.append([per_point2nd_A, per_point2nd_B])
         #print(flow_array)
     #df_add = pd.DataFrame({'PointA':pointA_array,'PointB':pointB_array,'GameA':gameA_array,'GameB':gameB_array,'SetA':setA_array,'SetB':setB_array})
-    np.savetxt(fileName + '_output.csv', np.array(flow_array), delimiter=',')
+    np.savetxt(fileName + '_output.csv', np.array(flow_array), delimiter=',')#
+    np.savetxt(fileName + '_gameA.csv', np.array(gameA_array), delimiter=',')
+    np.savetxt(fileName + '_gameB.csv', np.array(gameB_array), delimiter=',')
     print("Complete")
