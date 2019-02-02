@@ -2,7 +2,6 @@
 import numpy as np
 import matplotlib.animation as animation
 import matplotlib.pyplot as plt
-%matplotlib inline
 
 if __name__ == '__main__':
     f = open("init.json", 'r')

@@ -1,7 +1,6 @@
 #Create Graph as png file
 import matplotlib.pyplot as plt
 import numpy as np
-%matplotlib inline
 
 if __name__ == '__main__':
     f = open("init.json", 'r')
