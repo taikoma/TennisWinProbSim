@@ -1,38 +1,45 @@
-# WinProbabilitySim
+## WinProbabilitySim
 This Script is for Tennis Win Probability Simulation.
 
-You can get the win probability progress chart from point win data.
+You can get the win probability fluctuation chart from point won data.
 
-Win probability progress chart. 
+The figure below is Win probability fluctuation chart. 
 
 ![2019ausfinalosaka csv_graph](https://user-images.githubusercontent.com/7829080/52166241-14b74c00-274e-11e9-9a3e-47ded997aa24.png)
 
 
-Gif Animation.
+And GIF Animation.
 
 ![2019ausfinalosaka csv_graph](https://user-images.githubusercontent.com/7829080/52166256-4cbe8f00-274e-11e9-84b3-29ba7b0253ad.gif)
 
 # Input files
 - **.csv
 
-You need to prepare the csv file as below.
+If you want to calculate the simulation,you need to prepare the csv file as below.
 
 (Sample file "2019AusFinalOsaka.csv_output.csv")
 
-Point by point data which won the point and which server and so on.
+Point by point won data which won the point and which server and so on.
 
 ![screenshot](https://user-images.githubusercontent.com/7829080/52166585-85f8fe00-2752-11e9-89df-0c0db775526b.JPG)
 
+In row of FirstSecond,you edit the 1 or 2.
+At that point,if 1st serve was in,you edit the 1,
+Else if 1st serve was fault,you edit the 2.
 
+In row of Set,you edit set as that point.
+In row of Server,At that point,which the serve is.
+In row of WonA,If playerA got the point,you edit 1.
+If not,you edit 0.
 
 # Output files
+If you calc the simulation,you obtain this files.
 - Point by Point WinProbabilitiy data(.csv)
 - Win probability progress chart (.png)
 - Win probability progress chart Gif Animation(.gif)
 
 # Usage
 Before simulating,You need to edit the init.json
-
 
 ```json
 {
