@@ -49,7 +49,9 @@ If you calc the simulation,you obtain this files.
 - json
 
 # Usage
-1. Before simulating,You need to edit the init.json
+1. Clone this repository to your working directory.
+
+2. Before simulating,You need to edit the init.json
 
 ```json
 {
@@ -71,19 +73,19 @@ If you calc the simulation,you obtain this files.
 - "plength" This simulation is caluculated percentage of point win from last plength points.
 30 points is appropriate.
 
-When editing is completed,execute this script file
+3. When editing is completed,execute this script file
 ```terminal
 WinProbSim.py
 ```
 You can get Point by Point WinProbabilitiy data(.csv)
 
-2. And execute this script file.
+4. And execute this script file.
 You can get Win probability progress chart (.png)
 ```terminal
 MakeGraphPNG.py
 ```
 
-3. And execute this script file.
+5. And execute this script file.
 You can get Win probability progress chart Gif Animation(.gif)
 ```terminal
 MakeGraphGIF.py
