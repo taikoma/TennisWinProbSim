@@ -1,8 +1,11 @@
 ## WinProbabilitySim
-This Script is for Tennis Win Probability Simulation.
+Python programs for Tennis Win Probability Simulation.
+
+Monte Carlo simulation by random number calculation.
 
 You can get the win probability fluctuation chart from point won data.
 
+## Demo
 The figure below is Win probability fluctuation chart. 
 
 ![2019ausfinalosaka csv_graph](https://user-images.githubusercontent.com/7829080/52166241-14b74c00-274e-11e9-9a3e-47ded997aa24.png)
@@ -37,9 +40,16 @@ If you calc the simulation,you obtain this files.
 - Point by Point WinProbabilitiy data(.csv)
 - Win probability progress chart (.png)
 - Win probability progress chart Gif Animation(.gif)
+# Requirement
+- python3
+- pandas
+- numpy
+- matplotlib
+- sys
+- json
 
 # Usage
-Before simulating,You need to edit the init.json
+1. Before simulating,You need to edit the init.json
 
 ```json
 {
@@ -67,13 +77,13 @@ WinProbSim.py
 ```
 You can get Point by Point WinProbabilitiy data(.csv)
 
-And execute this script file.
+2. And execute this script file.
 You can get Win probability progress chart (.png)
 ```terminal
 MakeGraphPNG.py
 ```
 
-And execute this script file.
+3. And execute this script file.
 You can get Win probability progress chart Gif Animation(.gif)
 ```terminal
 MakeGraphGIF.py
