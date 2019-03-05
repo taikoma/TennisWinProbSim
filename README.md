@@ -1,22 +1,20 @@
-## TennisWinProbSim
-Python programs for Tennis Win Probability Simulation.
+# TennisWinProbSim
+![2019ausfinalosaka csv_graph](https://user-images.githubusercontent.com/7829080/52166241-14b74c00-274e-11e9-9a3e-47ded997aa24.png)
+
+TennisWinProbSim is python programs for simulate win probability in tennis match.
+For python3.xx.
 
 Monte Carlo simulation by random number calculation.
 
 You can get the win probability fluctuation chart from point won data.
 
-## Demo
-The figure below is Win probability fluctuation chart. 
-
-![2019ausfinalosaka csv_graph](https://user-images.githubusercontent.com/7829080/52166241-14b74c00-274e-11e9-9a3e-47ded997aa24.png)
-
-
-And GIF Animation.
+# Demo
+GIF Animation.
 
 ![2019ausfinalosaka csv_graph](https://user-images.githubusercontent.com/7829080/52166256-4cbe8f00-274e-11e9-84b3-29ba7b0253ad.gif)
 
 # Input files
-- **.csv
+- csvfile
 
 If you want to calculate the simulation,you need to prepare the csv file as below.
 
@@ -40,7 +38,8 @@ If you calc the simulation,you obtain this files.
 - Point by Point WinProbabilitiy data(.csv)
 - Win probability progress chart (.png)
 - Win probability progress chart Gif Animation(.gif)
-# Requirement
+
+# Dependency
 - python3
 - pandas
 - numpy
@@ -66,27 +65,29 @@ If you calc the simulation,you obtain this files.
 	"ngamges":1000
 	}
 ```
-- "file" Rewrite the filename of csvfile that is windata point by point 
+- "file" Rewrite the filename of csvfile that is windata point by point
 
 - "firstsecond" 0:ignore serve 1st2nd 1:serve 1st2nd
 
+- "playera" "playerb" Rewrite the playerName a and b.This name is needed to match
+
 - "plength" This simulation is caluculated percentage of point win from last plength points.
-30 points is appropriate.
+30 points is default.
 
-3. When editing is completed,execute this script file
-```terminal
-WinProbSim.py
-```
-You can get Point by Point WinProbabilitiy data(.csv)
+- "ngames" Number of caluculations.1000 is recommended.
 
-4. And execute this script file.
-You can get Win probability progress chart (.png)
+3. When editing is completed,open this ipynb file on the JupyterNotebook.
 ```terminal
-MakeGraphPNG.py
+WinProbSim.ipynb
 ```
+If you execute the top script,you can get Point by Point WinProbabilitiy data(.csv)
 
-5. And execute this script file.
-You can get Win probability progress chart Gif Animation(.gif)
-```terminal
-MakeGraphGIF.py
-```
+4. And if execute the second script,you can get Win probability progress chart (.png)
+
+5. If execute the third script,you can get Win probability progress chart Gif Animation(.gif)
+
+# Related Site
+[【試合の流れの可視化】勝率推移シミュレーション、データ集計から勝率チャート作成まで自動出力できるようにしました](http://datatennis.net/archives/5042/)
+
+# Licence
+This software is released under the MIT License, see LICENSE.
