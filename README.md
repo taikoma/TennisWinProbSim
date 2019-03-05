@@ -1,4 +1,4 @@
-## WinProbabilitySim
+## TennisWinProbSim
 Python programs for Tennis Win Probability Simulation.
 
 Monte Carlo simulation by random number calculation.
