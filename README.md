@@ -1,4 +1,5 @@
 # TennisWinProbSim
+テニスの勝率推移シミュレーション
 ![2019ausfinalosaka csv_graph](https://user-images.githubusercontent.com/7829080/52166241-14b74c00-274e-11e9-9a3e-47ded997aa24.png)
 
 TennisWinProbSim is python programs for simulate win probability in tennis match.
@@ -88,6 +89,10 @@ If you execute the top script,you can get Point by Point WinProbabilitiy data(.c
 
 # Related Site
 [【試合の流れの可視化】勝率推移シミュレーション、データ集計から勝率チャート作成まで自動出力できるようにしました](http://datatennis.net/archives/5042/)
+
+[大坂なおみの全豪オープン決勝戦、試合の流れを可視化してみました【勝率推移シミューレーション】](http://datatennis.net/archives/4919/)
+
+[テニスの試合の流れを可視化したく、確率シミュレーションを用いて勝率の推移をプロットしてみました【2018ウィンブルドン錦織】](http://datatennis.net/archives/4489/)
 
 # Licence
 This software is released under the MIT License, see LICENSE.
